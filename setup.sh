@@ -53,7 +53,7 @@ usage() {
 }
 
 ## Update, X11-repo, Program Installation
-_pkgs=(bc bmon calc calcurse curl dbus desktop-file-utils firefox feh fontconfig-utils fsmon \
+_pkgs=(bc bmon calc calcurse curl dbus desktop-file-utils feh fontconfig-utils fsmon \
 		geany git gtk2 gtk3 htop-legacy imagemagick jq leafpad man mpc mpd mutt ncmpcpp \
 		ncurses-utils neofetch netsurf obconf openbox openssl-tool polybar ranger rofi \
 		startup-notification termux-api thunar tigervnc vim wget xarchiver xbitmaps xcompmgr \
@@ -80,7 +80,8 @@ setup_base() {
 	done
 	reset_color
 }
-
+ ##setup browser
+ bash browser.sh
 ## Setup OMZ and Termux Configs
 setup_omz() {
 	# backup previous termux and omz files
